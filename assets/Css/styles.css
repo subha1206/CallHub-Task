@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: #fff;
+}
+h3{
+    font-size: 16px;
+}
+li{
+    list-style: none;
+    margin: 0 8px;
+}
+input{
+    padding: 12px;
+    border: 1px solid grey;
+    width: 80%;
+    background-color: honeydew;
+    border-radius: 3px;
+}
+.wrap{
+    height: 450px;
+    width: 55%;
+    display: flex;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+    box-shadow: -5px 30px 10px 0px rgba(0,0,0,0.3);
+}
+.social-icons {
+    margin: 15px 0;
+ }
+ .icons{
+     font-size: 15px;
+     padding: 5px;
+     color:black;
+     border-radius: 50%;
+     background-color: transparent;
+     border: 1px solid black;
+     width: 30px;
+     height: 30px;
+     display: inline-block; 
+     cursor: pointer;
+ }
+ .icons:hover{
+     background-color: indianred;
+ }
+.btn{
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #e70808;
+    border-radius: 3px;
+  }
+.btn,a{
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin:  auto;
+    width: fit-content;
+}
+.sign-up-content .btn{
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+#user-name{
+    margin-bottom: 15px;
+}
+#user-email{
+    margin-bottom: 15px;
+}
+#user-password{
+    margin-bottom: 15px;
+}
+
+.sign-in{
+    padding: 0;
+}
+.sign-up{
+    padding: 0;
+}
+
+.sign-up-part{
+    height: 500px;
+    background-color: red;
+    margin-bottom: 0;
+    /* border-radius: 12px 0 0 12px ; */
+}
+.sign-up-content{
+    margin-top: 100px;
+}
+.sign-in-part{
+    height: 500px;
+    background-color:whitesmoke;
+    border-radius: 3px;
+    margin-bottom: 0;
+    /* border-radius:0 12px 12px 0 ; */
+}
