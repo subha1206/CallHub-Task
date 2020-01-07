@@ -1,4 +1,7 @@
 let wraper = document.getElementsByClassName('container')
+const name = document.getElementById("user-name");
+const mail = document.getElementById("user-email");
+const password = document.getElementById("user-password");
 
 const slide = () => {
  wraper[0].innerHTML = ` 
@@ -22,9 +25,9 @@ const slide = () => {
                 </ul>
                 <p>or use your email for registration</p>
                 <form>
-                   <input type="text" name="name" id="user-name" placeholder="Name">
-                   <input type="email" name="email" id="user-email" placeholder="Email">
-                   <input type="password" name="password" id="user-password" placeholder="Password">
+                   <input type="text" name="name" id="user-name" placeholder="Name" required>
+                   <input type="email" name="email" id="user-email" placeholder="Email" required>
+                   <input type="password" name="password" id="user-password" placeholder="Password" required>
                    <a href="#" class="btn"> SIGN UP</a> 
                 </form>
          </div>
@@ -47,8 +50,8 @@ const slideback = () => {
                            </ul>
                            <p>or use your account</p>
                            <form>
-                              <input type="email" name="email" id="user-email" placeholder="Email">
-                              <input type="password" name="password" id="user-password" placeholder="Password">
+                              <input type="email" name="email" id="user-email" placeholder="Email" required>
+                              <input type="password" name="password" id="user-password" placeholder="Password" required>
                               <p>Forgot password ?</p>
                               <a href="#" class="btn"> SIGN IN</a> 
                            </form>
@@ -66,3 +69,12 @@ const slideback = () => {
     `
 }
 
+
+
+mail.addEventListener("input", function (event) {
+  if (mail.validity.typeMismatch) {
+    mail.setCustomValidity("I am expecting an e-mail!");
+  } else {
+    mail.setCustomValidity("");
+  }
+});
